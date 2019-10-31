@@ -1,6 +1,7 @@
 ## Referential transparency proof of concept
 
-This is a very simple example that should who why it matter to have a code that is referential transparent.
+This is a very simple example that should show why it matters to have a code that is referential transparent.
+In this case it will enable to do a remove duplication refactoring that it is not possible if the code is not referential transparent
 
 Definition:  
 _An expression is called **referentially transparent** if it can be replaced with its corresponding value without changing the program's behavior. This requires that the expression be pure, that is to say the expression value must be the same for the same inputs and its evaluation must have no side effects. An expression that is not referentially transparent is called referentially opaque._
