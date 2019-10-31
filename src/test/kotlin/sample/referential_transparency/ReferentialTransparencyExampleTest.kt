@@ -9,17 +9,7 @@ import org.junit.Test
 
 class ReferentialTransparencyExampleTest {
 
-    // doSomething - try to run examples without looking at the implementation
-    // but just the signature
-    fun doSomething(input: Int): Int {
-        if (availableSeats >= input)
-        {
-            availableSeats= availableSeats -input
-            return input
-        }
-        else return 0
 
-    }
 
     fun `p1 with duplication`(): Int {
 
@@ -122,7 +112,17 @@ class ReferentialTransparencyExampleTest {
 
 
 
+    // doSomething - try to run examples without looking at the implementation
+    // but just the signature
+    fun doSomething(input: Int): Int {
+        if (availableSeats >= input)
+        {
+            availableSeats= availableSeats -input
+            return input
+        }
+        else return 0
 
+    }
 
     val A_CONST = 4
     var availableSeats = A_CONST
